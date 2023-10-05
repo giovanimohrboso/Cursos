@@ -1,0 +1,5 @@
+print('{:=^50}'.format('Letras A'))
+letras = input('Digite uma frase:')
+print('Quantidade de Letras A : {}'.format(letras.upper().count('A')))
+print('Aparece a primeira vez na posição : {}'.format(letras.upper().find('A')))
+print('Aparece a ultima vez na posição : {}'.format(letras.upper().rfind('A')))

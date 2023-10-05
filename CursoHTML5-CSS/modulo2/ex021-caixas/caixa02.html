@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupin Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        nav {
+            background-color: aqua;
+            box-shadow: 2px 2px 10px black;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+        }
+        nav > a:hover {
+            color: blue;
+        }
+        main {
+            background-color: white;
+            color: red;
+            padding: 10px;
+            border-radius: 0px 0px 20px 20px;
+        }
+        section#assuntos {
+            background-color: lightgreen;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 2px 2px 10px black;
+            border-radius: 0px 20px;
+        }
+        section#noticias {
+            background-color: lightblue;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 2px 2px 10px black;
+            border-radius: 0px 20px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        footer > p {
+            margin: 1px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Assuntos</h2>
+            <p>Esportes e Política</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sequi officia odit enim maxime voluptate quisquam, animi mollitia non suscipit cum error! Iure incidunt inventore delectus consequuntur doloremque dolore dicta!</p>
+                <aside>
+                    <p>Artigo escrito por José</p> 
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Giovani</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

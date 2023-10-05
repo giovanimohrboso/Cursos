@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo o DOM</title>
+    <style>
+        body{
+            background-color: blue;
+            font-size: 20pt;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste com o DOM</h1>
+    <p>Aprendizado com <Strong>DOM</Strong> , a arvore hierarquica</p>
+    <p id="msg">Aqui vai o resultado</p>
+    <div>Clique em mim</div>
+    <script>
+        window.document.getElementById('msg').innerText = 'teste'
+        var d = window.document.getElementsByTagName('div')[0]
+        d.style.color = 'black'
+    </script>
+</body>
+</html>

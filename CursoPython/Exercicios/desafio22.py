@@ -1,0 +1,6 @@
+print('{:=^50}'.format('NOME'))
+nome = input('Digite seu Nome Completo:')
+print('Nome Maiusculo {}'.format(nome.upper()))
+print('Nome Minusculo {}'.format(nome.lower()))
+print('Quantas Letras {}'.format(len(nome.replace(' ',''))))
+print('Letras Primeiro Nome {}'.format(len(nome.split()[0])))

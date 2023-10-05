@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(237, 234, 234);
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: cadetblue;
+    width: 60vw;
+    text-align: center;
+    margin: auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em Html</title>
+</head>
+<body>
+    <h1>Midias</h1>
+    <p>Reproduzindo Audio</p>
+    <!--<audio src="midia/hellsbells.mp3" controls autoplay></audio>--> 
+    <audio preload="metadata" controls>
+        <source src="midia/hellsbells.mp3" type="audio/mpeg">
+        <source src="midia/hellsbells.ogg" type="audio/ogg">
+        <source src="midia/hellsbells.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir aúdio</p>
+    </audio>
+    <p>Reproduzindo Videos Hospedados Localmente</p>
+    <!--<video src="midia/Limao-menor.mp4" width="500" controls autoplay loop></video>--> 
+    <video controls width="500" poster="imagens/limao.png">
+        <source src="midia/Limao-menor.mp4" type="video/mp4">
+        <p>Não foi possivel reproduzir o Video</p>
+    </video>
+    <p>Reproduzindo videos Youtube</p>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+</body>
+</html>

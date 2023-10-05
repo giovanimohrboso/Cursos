@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body{
+            background-color: rgb(185, 180, 180);
+        }
+        div#resultado{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" id="txtn1">
+    <input type="number" id="txtn2">
+    <button id="somar" onclick="somar()">+</button>
+    <button id="diminuir" onclick="diminuir()">-</button>
+    <div id="resultado">Resultado</div>
+
+    <script>
+        
+        function somar(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.querySelector("div#resultado")
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var resultado = n1 + n2
+            res.innerText = `A soma entre ${n1} e ${n2} é ${resultado}`
+        }
+
+        function diminuir(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.querySelector("div#resultado")
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var resultado = n1 - n2
+            res.innerText = `A diminuição é ${resultado}`
+        }
+    </script>
+</body>
+</html>
